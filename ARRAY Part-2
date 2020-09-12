@@ -1,0 +1,49 @@
+#b)To calculate the frequency occurnce of the particular character into string
+print("****CALCULATE OCCURANCE OF THE CHARACTER****")
+from collections import Counter
+p="Hello Welcome to python"
+cnt=Counter(p)
+print("Occurance of Character in given string:","\n",str(cnt))
+
+print("\n")
+#a)to display word with the longest length
+
+print("****LONGEST LENGTH STRING****")
+l=['Welcome','To','Python','Progrmming']
+print(l)
+print("Longest length String is:",max(l))
+print("\n")
+
+# d)Reverse the String.
+
+print("****REVERSE STRING****")
+a=input("Enter the string:")
+str=a.split()
+print("Reverse String:",list(reversed(a)))
+print("\n")
+
+# D)To check wheather the string is palindrome or not
+
+print("****CHECK PALINDROME****")
+sp=input("Enter the string that you want to check is palindrome or not:")
+s=sp.split()
+if(sp==sp[::-1]):
+    print(sp," is Palindrome")
+else:
+    print(sp,"is Not palindrome")
+print("\n")
+
+#b)To count the occurance of word into the string
+
+print("****COUNT OCCURANCE OF WORD INTO STRING****")
+n="python is the  programming language.The python is easy language.python provides various functionality."
+sub="python"
+print(n)
+print("The word count of","'",sub,"'","is:",n.count(sub))
+print("\n")
+
+#e)To display the index of first appearnce of the substring
+print("Given String:",n)
+subs='a'
+cnt=n.count(subs)
+print("The Occurance of substring ",subs,"is:",cnt)
